@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantum Arcade - Elite Edition</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="loginContainer">
+      <div class="vault-side">
+        <div class="terminal-container" id="terminalContainer">
+          <div class="card-slot"></div>
+          <div class="security-card" id="securityCard">
+            <div class="chip"></div>
+            <div class="card-lines"></div>
+            <span class="pull-text">PULL DOWN TO PLAY</span>
+          </div>
+          <div class="status-light" id="statusLight"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-container" id="gameContainer">
+      <div class="game-header">
+        <div class="stat-box">SCORE: <span id="scoreVal">0</span></div>
+        <div class="game-title">NEON BREAKER <span id="levelText">LVL 1</span></div>
+        <div class="stat-box">LIVES: <span id="livesVal">3</span></div>
+      </div>
+      
+      <div class="canvas-relative">
+        <canvas id="gameCanvas" width="520" height="420"></canvas>
+        
+        <div class="canvas-overlay" id="gameOverScreen">
+          <h1 class="neon-red">GAME OVER</h1>
+          <p>SYSTEM BREACHED</p>
+          <button class="retry-btn" onclick="document.location.reload()">TRY AGAIN</button>
+        </div>
+
+        <div class="canvas-overlay" id="gameWinScreen">
+          <h1 class="neon-green">VICTORY</h1>
+          <p>ALL CORES DESTROYED</p>
+          <button class="retry-btn success" onclick="document.location.reload()">PLAY AGAIN</button>
+        </div>
+      </div>
+      
+      <div class="game-controls">
+        <button id="startBtn" class="game-btn">START SIMULATION</button>
+        <button id="resetBtn" class="game-btn reset">TERMINATE</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
