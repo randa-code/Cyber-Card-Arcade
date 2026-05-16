@@ -19,4 +19,4 @@ A cyberpunk neon-inspired arcade experience built entirely with clean Vanilla Ja
 ##  Installation & Local Setup
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/randa-code/Cyber-Card-Arcade.git](https://github.com/randa-code/Cyber-Card-Arcade.git)
+   git clone [https://github.com/randa-code/Cyber-Card-Arcade.git]
